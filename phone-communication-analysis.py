@@ -4,9 +4,9 @@ from datetime import datetime
 from tqdm import tqdm
 
 #Паттерны
-engine = create_engine("mysql+pymysql://"ВАШ ЛОГИН":"ВАШ ПАРОЛЬ"@172.16.10.63/marketing")                                       # Коннектор SQL
-date = datetime.now().strftime('%d.%m %H:%M:%S')                                                                         # Текущая дата
-bot = telebot.TeleBot("6116617842:AAHrJDfbe2NqfxI1rWWIoxUsGTTfKTNCk_E")                                                  # Токен telegram бота
+engine = create_engine(os.getenv("DB_URL"))
+bot = telebot.TeleBot(os.getenv("TELEGRAM_TOKEN"))
+chat_id = os.getenv("CHAT_ID")
 re_1 = r'[^0-9,.;/]'                                                                                                     # Регулярное выражение для отсева букв, пробелов
 re_2 = r'[^0-9]'                                                                                                         # Регулярное выражение для отсева знаков
 
