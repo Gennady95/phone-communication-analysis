@@ -1,0 +1,5 @@
+pandas
+SQLAlchemy
+tqdm
+pyTelegramBotAPI
+python-dotenv
