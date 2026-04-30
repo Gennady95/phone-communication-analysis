@@ -1,13 +1,13 @@
 # phone-communication-analysis
 По результатам скрипт покажет все коммуникации (входящие, исходящие звонки, заявки, заполненные формы), разобьёт по источникам и адресатам. Поддерживает пакетную обработку файлов (для каждого номера свои фильтры дат).
 
-#Phone Communication Analysis
+## Phone Communication Analysis
 
 ## Description
 This project analyzes customer communications based on a list of phone numbers.
 It processes communication data from a database and calculates activity metrics for each phone number.
 
-##Features
+## Features
 - Data extraction from SQL database
 - Phone number normalization
 - Matching input phone list with database records
